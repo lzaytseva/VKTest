@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VK Test</string>
+    <string name="retry_btn">Retry</string>
+    <string name="products_title">Products</string>
+    <string name="server_error">Server error. Please, try again later.</string>
+    <string name="no_internet_error">Error loading data. Please, check your internet connection.</string>
+    <string name="category">Category:</string>
+    <string name="brand">Brand:</string>
+    <string name="price">Price</string>
+    <string name="rating">Rating</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="medium_text_style">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+    </style>
+
+    <style name="regular_text_style">
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:textColor">@color/basic_text_color</item>
+    </style>
+
+    <style name="additional_text_style">
+        <item name="android:textSize">@dimen/additional_text_size</item>
+        <item name="android:textColor">@color/additional_text_color</item>
+    </style>
+
+</resources>

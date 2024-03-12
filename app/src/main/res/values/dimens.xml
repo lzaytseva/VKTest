@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_offset_16dp">16dp</dimen>
+    <dimen name="small_offset_8dp">8dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="thumbnail_image_corner_radius">2dp</dimen>
+    <dimen name="medium_text_size">22sp</dimen>
+    <dimen name="regular_text_size">16sp</dimen>
+    <dimen name="additional_text_size">14sp</dimen>
+</resources>

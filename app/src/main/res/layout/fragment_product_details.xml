@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingHorizontal="@dimen/medium_offset_16dp">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/small_offset_8dp"
+        tools:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_error"
+            style="@style/medium_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/medium_offset_16dp"
+            tools:text="Error message" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_color"
+            android:text="@string/retry_btn" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_product_photo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/medium_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_offset_8dp"
+            android:padding="@dimen/small_offset_8dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_product_photo"
+            tools:text="Название" />
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/regular_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_offset_8dp"
+            android:padding="@dimen/small_offset_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/label_category"
+            style="@style/regular_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_offset_8dp"
+            android:padding="@dimen/small_offset_8dp"
+            android:text="@string/category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            style="@style/regular_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_offset_8dp"
+            android:layout_marginTop="@dimen/small_offset_8dp"
+            android:padding="@dimen/small_offset_8dp"
+            app:layout_constraintStart_toEndOf="@+id/label_category"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            tools:text="Категория" />
+
+        <TextView
+            android:id="@+id/label_brand"
+            style="@style/regular_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_offset_8dp"
+            android:text="@string/brand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_category" />
+
+        <TextView
+            android:id="@+id/tv_brand"
+            style="@style/regular_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_offset_8dp"
+            app:layout_constraintStart_toEndOf="@+id/label_brand"
+            app:layout_constraintTop_toBottomOf="@id/label_category"
+            tools:text="Brand" />
+
+        <TextView
+            android:id="@+id/label_price"
+            style="@style/regular_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_offset_8dp"
+            android:text="@string/price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_brand" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/regular_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_offset_8dp"
+            app:layout_constraintStart_toEndOf="@+id/label_price"
+            app:layout_constraintTop_toBottomOf="@id/label_brand"
+            tools:text="Price" />
+
+        <TextView
+            android:id="@+id/label_rating"
+            style="@style/regular_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_offset_8dp"
+            android:text="@string/rating"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_price" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            style="@style/regular_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_offset_8dp"
+            app:layout_constraintStart_toEndOf="@+id/label_rating"
+            app:layout_constraintTop_toBottomOf="@id/label_price"
+            tools:text="Rating" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

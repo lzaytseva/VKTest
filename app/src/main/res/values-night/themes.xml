@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.VKTest" parent="Base.Theme.VKTest">
+        <item name="android:statusBarColor">@color/screen_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="colorAccent">@color/dark_blue</item>
+    </style>
+</resources>
